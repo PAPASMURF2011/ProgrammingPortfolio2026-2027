@@ -164,6 +164,42 @@ void keyPressed() {
     println("you hit 1 " + keyCode);
     handleEvent('1', true);
   }
+  else if (key == '2') {
+    println("you hit 2 " + keyCode);
+    handleEvent('2', true);
+  }
+  else if (key == '3') {
+    println("you hit 3 " + keyCode);
+    handleEvent('3', true);
+  }
+  else if (key == '4') {
+    println("you hit 4 " + keyCode);
+    handleEvent('4', true);
+  }
+  else if (key == '5') {
+    println("you hit 5 " + keyCode);
+    handleEvent('5', true);
+  }
+  else if (key == '6') {
+    println("you hit 6 " + keyCode);
+    handleEvent('6', true);
+  }
+   else if (key == '7') {
+    println("you hit 7 " + keyCode);
+    handleEvent('7', true);
+  }
+   else if (key == '8') {
+    println("you hit 8 " + keyCode);
+    handleEvent('8', true);
+  }
+   else if (key == '9') {
+    println("you hit 9 " + keyCode);
+    handleEvent('9', true);
+  }
+   else if (key == '0') {
+    println("you hit 0 " + keyCode);
+    handleEvent('0', true);
+  }
 }
 
 void handleEvent(char val, boolean isNum) {
