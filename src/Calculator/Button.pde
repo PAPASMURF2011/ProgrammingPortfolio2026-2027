@@ -19,6 +19,7 @@ class Button {
 
   // Member Methods
   void display() {
+    textSize(32);
     textAlign(CENTER);
     if(hover == true) {
     fill(c1);
