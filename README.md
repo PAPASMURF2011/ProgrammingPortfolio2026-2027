@@ -33,7 +33,7 @@ Mouse:
 [Left click on the number buttons once you have hovered over them.]
 
 Keyboard:
-[The 1 number key. Im planning on making the rest of the number keys work.]
+[All number keys work with the calculator.]
 
 ## Project Files
 [The main sketch is the Calculator PDE file and the Button PDE file has all the code for the buttons.]
