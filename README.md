@@ -15,34 +15,32 @@
 
 ## Current Status
 Working:
-- [A feature you have tested]
-- [Another feature you have tested]
+- [Button changes color when the computer mouse hovers over it.]
+- [The +,-,x, and = symbols do there correct calculations.]
 
 Still in progress:
-- [A requirement you are finishing]
+- [The +/- symbol that turns the number negative or postitive]
 
 ## How to Run
 Built with Processing.
-Processing version: [Your version]
+Processing version: [4.0.1]
 
 [After the project files are uploaded, identify the
 project folder and main .pde file to open and run.]
 
 ## Controls
 Mouse:
-[Explain how to use the buttons.]
+[Left click on the number buttons once you have hovered over them.]
 
 Keyboard:
-[List keys that currently work and what they do.
-Identify planned controls as not yet implemented.]
+[The 1 number key. Im planning on making the rest of the number keys work.]
 
 ## Project Files
-[Identify the main sketch and other tabs or assets
-you will upload.]
+[The main sketch is the Calculator PDE file and the Button PDE file has all the code for the buttons.]
 
 ## Testing
-[Record one test: actions, expected result,
-and actual result.]
+[Test #1
+I click on the number buttons and the numbers show up on the display. Simple calculations and the square root button perform there correct functionality.]
 
 ## Next Step
-[Name the specific behavior you will build or fix next.]
+[Fix errors and work on the keyboard functionality.]
