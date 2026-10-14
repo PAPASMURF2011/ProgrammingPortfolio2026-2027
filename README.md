@@ -23,7 +23,7 @@ Still in progress:
 
 ## How to Run
 Built with Processing.
-Processing version: [4.0.1]
+Processing version: 4.0.1
 
 After the project files are uploaded, identify the
 project folder and main .pde file to open and run.
