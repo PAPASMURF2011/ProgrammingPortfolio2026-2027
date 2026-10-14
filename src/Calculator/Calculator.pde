@@ -42,6 +42,7 @@ void setup() {
 }
 
 void draw() {
+  println("keyCode:" + keyCode);  
   background(#30BF9E);
   updateDisplay();
   for (int i = 0; i<numButtons.length; i++) {
@@ -199,6 +200,37 @@ void keyPressed() {
    else if (key == '0') {
     println("you hit 0 " + keyCode);
     handleEvent('0', true);
+  } 
+  else if (key == '.') {
+    println("you hit . " + keyCode);
+    handleEvent('.', false);
+  }
+  else if (keyCode == 80) {
+    println("you hit + " + keyCode);
+    handleEvent('+', false);
+  }
+  else if (keyCode == 61) {
+    println("you hit + " + keyCode);
+    handleEvent('+', false);
+  } else if (key == '-') {
+    println("you hit - " + keyCode);
+    handleEvent('-', false);
+  } 
+  else if (key == 'x') {
+    println("you hit x " + keyCode);
+    handleEvent('x', false);
+  }
+  else if (key == '/') {
+    println("you hit ÷ " + keyCode);
+    handleEvent('÷', false);
+  }
+  else if (keyCode == 10 || keyCode == 0) {
+    println("you hit = " + keyCode);
+    handleEvent('=', false);
+  }
+  else if (keyCode == 8) {
+    println("you hit C " + keyCode);
+    handleEvent('C', false);
   }
 }
 
@@ -221,6 +253,47 @@ void handleEvent(char val, boolean isNum) {
       r = float(displayVal);
     }
   } else {
-    //other stuff
+  
+      char clicked = val;
+
+      if (clicked == '=') {
+        performCalc();
+      } else if (clicked == '+' || clicked == '-' ||
+        clicked == 'x' || clicked == '÷') {
+        op = clicked;
+        left = false;
+        newEntry = true;
+        displayVal = str(op);
+      } else if (clicked == '±') {
+      } else if (clicked == 'C') {
+        // reset all varaibles
+        displayVal = "0.0";
+        l = 0.0;
+        newEntry=true;
+        r = 0.0;
+        result = 0.0;
+        op = ' ';
+        left = true;
+      } else if (clicked == '^') {
+        if (left == true) {
+          l = sq(l);
+          displayVal = str(l);
+        } else {
+          r = sq(r);
+          displayVal = str(r);
+        }
+      } else if (clicked == '.') {
+        if (displayVal.contains(".") == false) {
+          if (left == true) {
+            displayVal += ".";
+            l = float(displayVal);
+          } else {
+            displayVal += ".";
+            r = float(displayVal);
+          }
+
+          //toggleSign();
+        }
+      }
+    }
   }
-}
